@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+}
+body {
+    background-color: #2f2f2f;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -170px;
+    animation: bgfade 20s infinite;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+    text-align: center;
+    position: sticky;
+    height: 7vh;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+nav ul li button {
+    font-size: 1vw;
+    margin: 1rem;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.35);
+    transition: ease-out 100ms;
+    box-sizing: border-box;
+}
+nav ul li ul li {
+    display: none;
+}
+nav ul li ul li img {
+    width: 5vw;
+    position: absolute;
+}
+nav ul li:hover ul li {
+    display: block;
+}
+nav button:hover {
+    transform: scale(1.1);
+    border: yellow solid;
+    color: blue;
+}
+.logo-box {
+    width: 13vw;
+    margin-left: 3vw;
+    height: 80vh;
+    animation: fade 20s infinite;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.logo {
+    width: 100%;
+}
+@keyframes bgfade {
+    0% {
+        background-image: url(imgs/bg33.jpg);  
+        
+    }
+    20% {
+        background-image: url(imgs/bg2.jpg); 
+    }
+    40% {
+        background-image: url(imgs/bg33.jpg);
+    }
+    60% {
+        background-image: url(imgs/bg2.jpg); 
+    }
+    80% {
+        background-image: url(imgs/bg33.jpg);
+    }
+    100% {
+        background-image: url(imgs/bg2.jpg); 
+    }
+}
+@keyframes fade {
+    0% {
+        background-image: url(500logo.png); 
+    }
+    20% {
+        background-image: url(500logo.png);       
+    }
+    40% {
+        background-image: url(dheelogo.png);
+    }
+    60% {
+        background-image: url(500logo.png);
+    }
+    80% {
+        background-image: url(dheelogo.png);
+    }
+    100% {
+        background-image: url(500logo.png);
+    }
+}
+
+@media (max-width: 1300px) {
+    nav ul li button {
+        font-size: larger;
+    }
+}
+@media (max-width: 1200px) {
+    body {
+        background-position-y: 15px;
+    }
+    nav ul li button {
+        font-size: larger;
+    }
+}
+@media (max-width: 1100px) {
+    nav ul li button {
+        font-size: large;
+    }
+    table tr td, table tr th {
+        font-size: small;
+        padding: 1px;
+    }
+}
+@media (max-width: 850px) {
+    body {
+        background-position-x: -230px;
+        background-position-y: 10px;
+    }
+    nav {
+        margin-top: 20px;
+    }
+    .logo-box {
+        width: 30vw;
+    }
+    table tr td, table tr th {
+        font-size: larger;
+        padding: 3px;
+    }
+}
+@media (max-width: 420px) {
+    body {
+        background-position-x: -400px;
+        animation: none;
+        background-image: url(imgs/bg2.jpg);
+    }
+    nav ul {
+        position: absolute;
+    }
+    nav ul li button {
+        font-size: small;
+        margin: 5px;
+    }
+    table {
+        width: 90vw;
+    }
+    table tr td, table tr th {
+        font-size: small;
+        padding: 1px;
+    }
+}

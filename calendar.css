@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+}
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.toph {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(imgs/bg.jpg);
+    background-attachment: fixed;
+    color: white;
+}
+.header {
+    width: 90%;
+    margin: auto;
+    border-left: 1px;
+    border-right: 1px;
+}
+.main {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    padding: 20px;
+}
+.calendar {
+    width: 63%;
+    text-align: center;
+    border-radius: 10px;
+}
+.aside {
+    width: 30%;
+    line-height: 1.5rem;
+}
+/* ==================================== */
+section {
+    background-color: #f4f4f4;
+}
+.fhs {
+    width: 85%;
+    margin: auto;
+}
+.cons {
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.wedding-wrapper {
+    width: 85%;
+    margin: auto;
+    animation-name: wedding;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.babtism-wrapper {
+    width: 85%;
+    margin: auto;
+    animation-name: babtism;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bday-wrapper {
+    width: 85%;
+    margin: auto;
+    animation-name: bday;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.debut-wrapper {
+    width: 85%;
+    margin: auto;
+    animation-name: debut;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+section a {
+    text-decoration: none;  
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: larger;
+}
+.container {
+    display: flex;
+}
+.dcon .image-con img{
+    animation: swap 10s infinite;
+    transition: ease 100ms;
+}
+.text {
+    margin: auto;
+    text-align: center;
+    width: 55%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+.text h1 {
+    font-size: 5rem;
+}
+.text p {
+    font-size: 2.5rem;
+}
+.image-con {
+    width: 40%;
+    padding: 10px;
+}
+.image-con img {
+    width: 90%;
+    margin: auto;
+}
+/* ==================================== */
+.header2 {
+    margin: auto;
+    border-left: 1px;
+    border-right: 1px;
+    background-color: #f4f4f4;
+}
+.header2 h1 {
+    padding: 5px;
+    margin-left: 10vw;
+}
+.inside {
+    padding: 20px;
+}
+.in {
+    display: flex;
+    flex-wrap: wrap;
+}
+.in img {
+    margin: auto;
+    min-width: 100px;
+}
+.in ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.dhee {
+    text-align: center;
+}
+
+@keyframes wedding {
+    0% {
+        background-image: url(imgs/wedding-bg7.jpg);       
+    }
+    25% {
+        background-image: url(imgs/wedding-bg2.jpg);
+    }
+    50% {
+        background-image: url(imgs/wedding-bg3.jpg);
+    }
+    75% {
+        background-image: url(imgs/wedding-bg4.jpg);
+    }
+    100% {
+        background-image: url(imgs/wedding-bg6.png);
+    }
+}
+@keyframes babtism {
+    0% {
+        background-image: url(imgs/babs-bg2.jpg);
+    }
+    33% {
+        background-image: url(imgs/babs-bg3.jpg);
+    }
+    70% {
+        background-image: url(imgs/babs-bg4.jpg);
+    }
+    100% {
+        background-image: url(imgs/babs-bg.jpg);
+    }
+}
+
+@keyframes bday {
+    0% {
+        background-image: url(imgs/bday-bg.jpg);       
+    }
+    25% {
+        background-image: url(imgs/bday-bg2.jpg);
+    }
+    50% {
+        background-image: url(imgs/bday-bg3.jpg);
+    }
+    75% {
+        background-image: url(imgs/bday-bg4.jpg);
+    }
+    100% {
+        background-image: url(imgs/bday-bg5.jpg);
+    }
+}
+@keyframes debut {
+    0% {
+        background-image: url(imgs/debut-bg1.png);       
+    }
+    33% {
+        background-image: url(imgs/debut-bg1.jpg);
+    }
+    66% {
+        background-image: url(imgs/debut-bg4.jpg)
+    }
+    100% {
+        background-image: url(imgs/debut-bg3.jpg);
+    }
+}
+@keyframes swap {
+    0% {
+               
+    }
+    33% {
+        position: relative;
+        left: 0%;
+    }
+    66% {
+        position: relative;
+        left: 70%;
+    }
+    100% {
+        position: relative;
+        left: 0%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .main {
+        flex-direction: column;
+    }
+    .calendar {
+        width: 90vw;
+    }
+    .card h1 {
+        font-size: large;
+    }
+}
+@media (max-width: 1100px) {
+    nav ul li button {
+        font-size: large;
+    }
+    .text h1 {
+        font-size: 2.5rem;
+    }
+    .text p {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 850px) {
+    nav {
+        margin-top: 20px;
+    }
+    .card {
+        width: calc(100%/3);
+        height: 45vw;
+    }
+    .card-container {
+        width: 90vw;
+    }
+}
+@media (max-width: 480px) {
+    .card {
+        width: calc(100%/1);
+        height: 75vw;
+    }
+    .dhee img {
+        width: 90vw;
+    }
+    .text h1 {
+        font-size: 1.3rem;
+    }
+    .text p {
+        font-size: 1rem;
+    }
+    .image-con {
+        display: none;
+    }
+    .cons {
+        height: 33vh;
+    }
+    .container {
+        height: 90%;
+        align-items: center;
+    }
+}
+@media (max-width: 420px) {
+    nav ul {
+        position: absolute;
+    }
+    nav ul li button {
+        font-size: small;
+        margin: 5px;
+    }
+}
