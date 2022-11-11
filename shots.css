@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+}
+body {
+    background-color: #2f2f2f;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* .dhee {
+    background-color: white;
+}
+.dhee section {
+    background-color: white;
+} */
+nav {
+    text-align: center;
+    position: sticky;
+    height: 7vh;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+nav ul li button {
+    font-size: 1vw;
+    margin: 1rem;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.35);
+    transition: ease-out 100ms;
+    box-sizing: border-box;
+}
+nav ul li ul li {
+    display: none;
+}
+nav ul li ul li img {
+    width: 5vw;
+    position: absolute;
+}
+nav ul li:hover ul li {
+    display: block;
+}
+nav button:hover {
+    transform: scale(1.1);
+    border: yellow solid;
+    color: blue;
+}
+/* -====- */
+header {
+    width: 100vw;
+    margin: auto;
+    display: flex;
+    overflow-x: hidden;
+    display: none;
+}
+header img:first-child {
+    margin-left: 0px;
+}
+header img {
+    width: 100%;
+    animation: slide 25s infinite;
+}
+
+/* -===================- */
+section {
+    background-color: #2f2f2f;
+}
+.fhs {
+    width: 85%;
+    margin: auto;
+    color: white;
+}
+.fhs a h1 {
+    color: white;
+}
+.fb-page {
+    width: 100%;
+}
+.cons {
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.wedding-wrapper {
+    width: 85%;
+    margin: auto;
+    animation-name: wedding;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.babtism-wrapper {
+    width: 85%;
+    margin: auto;
+    animation-name: babtism;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bday-wrapper {
+    width: 85%;
+    margin: auto;
+    animation-name: bday;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.debut-wrapper {
+    width: 85%;
+    margin: auto;
+    animation-name: debut;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.corpo-wrapper {
+    width: 85%;
+    margin: auto;
+    animation-name: corpo;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+section a {
+    text-decoration: none;  
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: larger;
+}
+.container {
+    display: flex;
+}
+.dcon .image-con img{
+    animation: swap 10s infinite;
+    transition: ease 100ms;
+}
+.text {
+    margin: auto;
+    text-align: center;
+    width: 55%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+.text h1 {
+    font-size: 5rem;
+}
+.text p {
+    font-size: 2.5rem;
+}
+.image-con {
+    width: 40%;
+    padding: 10px;
+}
+.image-con img {
+    width: 90%;
+    margin: auto;
+}
+
+.modal-bg {
+    position: fixed;
+    top: 0;
+    display: block;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color: rgba(245, 245, 245, 0.5);
+}
+.close {
+    display: none;
+}
+.modal-container {
+    padding: 10px;
+    background-color: #2f2f2f7e;
+    border-radius: 5px;
+    width: 380px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes slide {
+    0% {
+        position: relative;
+        right: 0%;
+    }
+    20% {
+        position: relative;
+        right: 100%;
+    }
+    40% {
+        position: relative;
+        right:  200%;
+    }
+    60% {
+        position: relative;
+        right: 300%;
+    }
+    80% {
+        position: relative;
+        right: 400%;
+    }
+    100% {
+        position: relative;
+        right: 0%;
+    }
+}
+
+@keyframes wedding {
+    0% {
+        background-image: url(imgs/wedding-bg7.jpg);       
+    }
+    25% {
+        background-image: url(imgs/wedding-bg2.jpg);
+    }
+    50% {
+        background-image: url(imgs/wedding-bg3.jpg);
+    }
+    75% {
+        background-image: url(imgs/wedding-bg4.jpg);
+    }
+    100% {
+        background-image: url(imgs/wedding-bg6.png);
+    }
+}
+@keyframes babtism {
+    0% {
+        background-image: url(imgs/babs-bg2.jpg);
+    }
+    33% {
+        background-image: url(imgs/babs-bg3.jpg);
+    }
+    70% {
+        background-image: url(imgs/babs-bg4.jpg);
+    }
+    100% {
+        background-image: url(imgs/babs-bg.jpg);
+    }
+}
+@keyframes bday {
+    0% {
+        background-image: url(imgs/bday-bg.jpg);       
+    }
+    25% {
+        background-image: url(imgs/bday-bg2.jpg);
+    }
+    50% {
+        background-image: url(imgs/bday-bg3.jpg);
+    }
+    75% {
+        background-image: url(imgs/bday-bg4.jpg);
+    }
+    100% {
+        background-image: url(imgs/bday-bg5.jpg);
+    }
+}
+@keyframes debut {
+    0% {
+        background-image: url(imgs/debut-bg1.png);       
+    }
+    33% {
+        background-image: url(imgs/debut-bg1.jpg);
+    }
+    66% {
+        background-image: url(imgs/debut-bg4.jpg)
+    }
+    100% {
+        background-image: url(imgs/debut-bg3.jpg);
+    }
+}
+@keyframes swap {
+    0% {
+               
+    }
+    33% {
+        position: relative;
+        left: 0%;
+    }
+    66% {
+        position: relative;
+        left: 70%;
+    }
+    100% {
+        position: relative;
+        left: 0%;
+    }
+}
+@keyframes corpo {
+    0% {
+        background-image: url(imgs/corpo-bg1.jpg);
+    }
+    33% {
+        background-image: url(imgs/corpo-bg4.jpg);
+    }
+    70% {
+        background-image: url(imgs/corpo-bg2.jpg);
+    }
+    100% {
+        background-image: url(imgs/corpo-bg3.jpg);
+    }
+}
+
+
+@media (max-width: 1100px) {
+    nav ul li button {
+        font-size: large;
+    }
+    .text h1 {
+        font-size: 2.5rem;
+    }
+    .text p {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 850px) {
+    nav {
+        margin-top: 20px;
+    }
+    header {
+        display: block;
+        width: 100vw;
+        margin: auto;
+        display: flex;
+        overflow-x: hidden;
+    }
+}
+@media (max-width: 480px) {
+    .text h1 {
+        font-size: 1.3rem;
+    }
+    .text p {
+        font-size: 1rem;
+    }
+    .image-con {
+        display: none;
+    }
+    .cons {
+        height: 33vh;
+    }
+    .container {
+        height: 90%;
+        align-items: center;
+    }
+}
+@media (max-width: 420px) {
+    nav ul {
+        position: absolute;
+    }
+    nav ul li button {
+        font-size: small;
+        margin: 5px;
+    }
+}

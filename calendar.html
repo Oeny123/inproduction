@@ -15,13 +15,13 @@
                 <a href="index.html"><button>Home</button></a>
             </li>
             <li>
-                <button>Photoshot</button>
+                <a href="photoshot.html"><button>Photoshot</button></a>
                 <ul>
-                    <li><img src="500logo.png" alt=""></li>
+                    <li><img src="W500logo.png" alt=""></li>
                 </ul>
             </li>
             <li>
-                <button>Photo Booth</button>
+                <a href="photobooth.html"><button>Photo Booth</button></a>
                 <ul>
                     <li><img src="dheelogo.png" alt=""></li>
                 </ul>
@@ -85,7 +85,7 @@
 <br>
 <div class="fhs">
     <a href="">
-        <img src="500logo.png" alt="" class="logo" width="10%">
+        <img src="W500logo.png" alt="" class="logo" width="10%">
         <h1>500ShutterProductions</h1>
     </a>
 </div>
@@ -98,56 +98,16 @@
                 <p>Make a once in a lifetime worth more than once</p>
             </div>
             <div class="image-con">
-                <img src="imgs/wedding.jpg" alt="">
+                <div>
+
+                </div>
             </div>
             
         </div>
 <br>
     </div>
 <br>
-    <div class="babtism-wrapper cons">
 <br>
-        <div class="container">
-            <div class="image-con">
-                <img src="imgs/babs.jpg" alt="">
-            </div>
-            <div class="text">
-                <h1>Babtism</h1>
-                <p>Make a once in a lifetime worth more than once</p>
-            </div>
-        </div>
-<br>
-    </div>
-<br>
-    <div class="bday-wrapper cons">
-<br>
-        <div class="container">
-            <div class="text">
-                <h1>Birthday</h1>
-                <p>Make it specail for the smile</p>
-            </div>
-            <div class="image-con cons">
-                <img src="imgs/bday.jpg" alt="">
-            </div>
-        </div>
-<br>
-    </div>
-    <br>
-    <div class="debut-wrapper cons">
-<br>
-        <div class="container dcon">
-            <div class="image-con">
-                <img src="imgs/debut.jpg" alt="">
-            </div>
-            <div class="text">
-                <h1>Debut</h1>
-                <p>Make a once in a lifetime worth more than once</p>
-            </div>
-        </div>
-<br>
-    </div>
-
-    <br>
     </section>
 <br>
 <br>
@@ -158,5 +118,35 @@
 <br>
 <br>
 <br>
+<!-- Messenger Chat Plugin Code -->
+<div id="fb-root"></div>
+
+<!-- Your Chat Plugin code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "100301609327609");
+  chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+
+<!-- Your SDK code -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v15.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
 </body>
 </html>

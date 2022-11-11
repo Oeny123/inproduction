@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shots.css">
+    <title>Photoshot</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html"><button>Home</button></a>
+            </li>
+            <li>
+                <a href="photobooth.html"><button>Photo Booth</button></a>
+                <ul>
+                    <li><img src="dheelogo.png" alt=""></li>
+                </ul>
+            </li>
+            <li><a href="gallery.html">
+                <button>Gallery</button></a>
+            </li>
+            <li>
+                <a href="calendar.html"><button>More</button></a>
+            </li>
+        </ul>
+    </nav>
+<br>
+<br>
+    <header>
+        <img src="/imgs/wedding-bg5.jpg" alt="">
+        <img src="/imgs/babs-bg.jpg" alt="">
+        <img src="/imgs/bday-bg6.jpg" alt="">
+        <img src="/imgs/debut-bg1.jpg" alt="">
+        <img src="/imgs/corpo-bg1.jpg" alt="">
+    </header>
+    <section>
+        <br>
+        <div class="fhs">
+            <a href="">
+                <img src="W500logo.png" alt="" class="logo" width="10%">
+                <h1>500ShutterProductions</h1>
+            </a>
+        </div>
+        <br>
+        <br>
+            <div class="wedding-wrapper cons">
+        <br>
+                <div class="container">
+                    <div class="text">
+                        <h1>Wedding</h1>
+                        <p>Make a once in a lifetime worth more than once</p>
+                    </div>
+                    <div class="image-con">
+                        <img src="imgs/wedding.jpg" alt="">
+                    </div>
+                    
+                </div>
+        <br>
+            </div>
+        <br>
+            <div class="babtism-wrapper cons">
+        <br>
+                <div class="container">
+                    <div class="image-con">
+                        <img src="imgs/babs.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h1>Babtism</h1>
+                        <p>Make a once in a lifetime worth more than once</p>
+                    </div>
+                </div>
+        <br>
+            </div>
+        <br>
+            <div class="bday-wrapper cons">
+        <br>
+                <div class="container">
+                    <div class="text">
+                        <h1>Birthday</h1>
+                        <p>Make it specail for the smile</p>
+                    </div>
+                    <div class="image-con cons">
+                        <img src="imgs/bday.jpg" alt="">
+                    </div>
+                </div>
+        <br>
+            </div>
+            <br>
+            <div class="debut-wrapper cons">
+        <br>
+                <div class="container dcon">
+                    <div class="image-con">
+                        <img src="imgs/debut.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h1>Debut</h1>
+                        <p>Make a once in a lifetime worth more than once</p>
+                    </div>
+                </div>
+        <br>
+            </div>
+        <br>
+            <div class="corpo-wrapper cons">
+        <br>
+                <div class="container">
+                    <div class="text">
+                        <h1>Corpo</h1>
+                        <p>Show that you're above others</p>
+                    </div>
+                    <div class="image-con cons">
+                        <img src="imgs/corpo.jpg" alt="">
+                    </div>
+                </div>
+        <br>
+            </div>
+            <br>
+    </section>
+
+
+
+
+    
+        
+<div class="modal-bg" id="modal" onclick="closem()">
+        <div class="modal-container">
+            <div class="fb-page" 
+                data-tabs="timeline,events,messages"
+                data-href="https://www.facebook.com/5iveshutter"
+                data-width="380" 
+                data-hide-cover="false">
+            </div>
+            <br>
+        </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Messenger Chat Plugin Code -->
+<div id="fb-root"></div>
+
+<!-- Your Chat Plugin code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "100301609327609");
+  chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+
+<!-- Your SDK code -->
+<script>
+
+
+
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v15.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
+  function closem() {
+    let Mint = document.getElementById("modal");
+    Mint.classList.toggle("close");
+}
+</script>
+</body>
+</html>
